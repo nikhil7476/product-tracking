@@ -6,10 +6,10 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## 🏗️ How It Works
 
-1️⃣ Product List (index.js) loads dynamic product data with badges.
-2️⃣ Product Card (ProductCard.js) displays each product with Bootstrap styling.
-3️⃣ Click Tracking: If a product has a badge, a GTM event fires with the product details.
-4️⃣ Logs event to the console for debugging.
+- 1️⃣ Product List (index.js) loads dynamic product data with badges.
+- 2️⃣ Product Card (ProductCard.js) displays each product with Bootstrap styling.
+- 3️⃣ Click Tracking: If a product has a badge, a GTM event fires with the product details.
+- 4️⃣ Logs event to the console for debugging.
 
 ## 🛠 Technologies Used
 

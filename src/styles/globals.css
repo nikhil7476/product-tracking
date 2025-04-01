@@ -1,42 +1,45 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.product-list {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.product-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.badge {
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  position: relative;
+  top: -10px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.card {
+  transition: transform 0.3s ease-in-out;
+  padding: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.card:hover {
+  transform: scale(1.05);
 }
